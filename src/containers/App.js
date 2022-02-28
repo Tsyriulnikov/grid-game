@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, {useReducer} from 'react';
 import './App.css';
 import GameField from "../components/game_field";
@@ -188,7 +189,7 @@ const App = () => {
             let clickDivNumber = elementById.substring(1);//number div 0-19
 
             switch (clickDivType) {
-                case "v": {
+                case "v": 
                     if (verticalArray[clickDivNumber] === false
                     ) {
 //push vertical div
@@ -197,7 +198,7 @@ const App = () => {
                         checkByPainting(elementById);
                       //end check p0 by paint
                     }
-                }
+                
                     break;
                 case
                 "h"
